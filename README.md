@@ -12,7 +12,7 @@ conda create -n enc_dec python=3.10 -y
 
 ### Step 1: Clone the Repository
 
-Clone the repository to your local machine using the following command:
+Clone the repository :
 
 ```bash
 git clone https://github.com/gir-ish/ENC-DEC.git
