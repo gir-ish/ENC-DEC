@@ -1,0 +1,27 @@
+We are using system process that runs the gunicorn to run the flask app. System process is located at
+/etc/systemd/system/flask_app.service
+
+Whenever you make changes to the flask_app.py file you must restart the service to take the affect.
+sudo systemctl restart flask_app
+
+check status
+sudo systemctl status flask_app
+
+We are then using ngnix as proxy.
+sudo systemctl restart nginx
+
+/etc/systemd/system/flask_app.service content 
+
+[Unit]
+Description=Gunicorn instance to serve whatsapp-flask
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/whatsapp-flask
+Environment="PATH=/home/ubuntu/whatsapp-flask/flask-whatsapp/bin"
+ExecStart=/home/ubuntu/whatsapp-flask/flask-whatsapp/bin/gunicorn --workers 3 --bind 127.0.0.1:8000 -m 007 flask_app:app
+
+[Install]
+WantedBy=multi-user.target
