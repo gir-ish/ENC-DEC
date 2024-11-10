@@ -10,7 +10,7 @@ conda create -n enc_dec python=3.10 -y
 
 ## Setup Instructions
 
-### Step 1: Clone the Repository
+### Steps:
 
 Clone the repository :
 
