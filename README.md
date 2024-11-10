@@ -1,7 +1,10 @@
-# Project Title
+# Project ENC-DEC
 
 ## Description
-Briefly describe what your project is about, its purpose, and any key features.
+CREATE onda env with python=3.10
+```bash
+conda create -n enc_dec python=3.10 -y
+```
 
 ---
 
@@ -12,4 +15,11 @@ Briefly describe what your project is about, its purpose, and any key features.
 Clone the repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/gir-ish/ENC-DEC.git
+cd ENC-DEC
+
+pip install requirements.txt
+
+cd APP
+
+streamlit run app_new.py
