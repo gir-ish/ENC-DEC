@@ -37,7 +37,7 @@ pip install -r requirements.txt
 Navigate to the `APP` folder and start the app using Streamlit:
 ```bash
 cd APP
-streamlit run app.py
+streamlit run app_new.py
 ```
 
 ---
@@ -89,5 +89,3 @@ If you encounter file path issues:
 - Reach out for support if needed—collaboration makes everything better! 🙌  
 
 ---
-
-Happy coding! 🎉
