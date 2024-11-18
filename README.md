@@ -19,7 +19,8 @@ CREATE conda env with python=3.10
 ```bash
 conda create -n enc_dec python=3.10 -y
 ```
-#    can create venv
+can create venv
+---
 
 Clone the repository to your local machine:
 ```bash
